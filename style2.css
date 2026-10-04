@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    background-color: #bdbdbd;
+    border: 3px solid #7b7b7b;
+    padding: 2px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #7b7b7b #7b7b7b #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell.open {
+    background-color: #e0e0e0;
+    border: 1px solid #b5b5b5;
+}
+
+.cell.mine {
+    background-color: red;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
